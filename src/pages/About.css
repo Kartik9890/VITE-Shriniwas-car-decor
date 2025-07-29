@@ -1,0 +1,34 @@
+.about-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-intro, .about-mission, .about-features {
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-mission h2,
+.about-features h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-features li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}

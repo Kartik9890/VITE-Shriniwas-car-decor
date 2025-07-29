@@ -1,0 +1,105 @@
+.home-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #cc0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.intro-section,
+.services-highlight,
+.cta-section {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.services-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  width: 220px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.home-gallery-preview {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.home-gallery-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-gallery-preview p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-preview-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-preview-grid img {
+  width: 280px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.gallery-preview-grid img:hover {
+  transform: scale(1.03);
+}
+
+.gallery-button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
