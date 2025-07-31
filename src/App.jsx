@@ -1,13 +1,13 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
