@@ -1,7 +1,8 @@
 // src/components/Footer.jsx
 import React from "react";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import "./Footer.css"; // Make sure this path is correct
+import { Link } from "react-router-dom"; // Import Link
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -18,19 +19,19 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="/gallery">Gallery</a>
+              <Link to="/gallery">Gallery</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -39,13 +40,28 @@ const Footer = () => {
         <div>
           <h4>Follow Us</h4>
           <div className="footer-social">
-            <a href="#" aria-label="Facebook">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FaFacebookF />
             </a>
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <FaInstagram />
             </a>
-            <a href="#" aria-label="WhatsApp">
+            <a
+              href="https://wa.me/your-number"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
               <FaWhatsapp />
             </a>
           </div>
