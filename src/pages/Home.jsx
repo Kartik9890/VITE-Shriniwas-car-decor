@@ -6,6 +6,9 @@ import { galleryImages, topServices } from "./galleryData.jsx";
 function Home() {
   const previewImages = galleryImages.slice(0, 3);
 
+  // Video path with base URL support (works for GitHub Pages)
+  const videoSrc = `${import.meta.env.BASE_URL}car-hero.mp4`;
+
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -21,9 +24,13 @@ function Home() {
           </Link>
         </div>
         <div className="hero-image">
-          <img
-            src="https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg"
-            alt="Car Decor"
+          <video
+            src={videoSrc}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="hero-video"
           />
         </div>
       </section>
