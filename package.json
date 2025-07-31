@@ -2,6 +2,7 @@
   "name": "shriniwas-car-decor",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://kartik9890.github.io/VITE-Shriniwas-car-decor",
   "type": "module",
   "scripts": {
     "dev": "vite",
