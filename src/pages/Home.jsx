@@ -15,7 +15,10 @@ function Home() {
             Enhance your drive with premium car accessories and interior
             makeovers.
           </p>
-          <a href="/services" className="cta-button">
+          <a
+            href="https://kartik9890.github.io/services"
+            className="cta-button"
+          >
             Explore Our Services
           </a>
         </div>
