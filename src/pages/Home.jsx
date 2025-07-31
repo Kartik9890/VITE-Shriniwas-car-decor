@@ -16,7 +16,7 @@ function Home() {
             Enhance your drive with premium car accessories and interior
             makeovers.
           </p>
-          <Link to="/services" className="cta-button">
+          <Link to="/services#/services" className="cta-button">
             Explore Our Services
           </Link>
         </div>
