@@ -1,4 +1,18 @@
-<script>
-    // Redirect all 404s to index.html for React Router
-    location.replace("/VITE-Shriniwas-car-decor" + "/");
-</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+        // Preserve route and redirect to root
+        sessionStorage.redirect = location.pathname;
+        window.location.href = "/VITE-Shriniwas-car-decor/";
+    </script>
+</head>
+
+<body>
+    <p>Redirecting...</p>
+</body>
+
+</html>
