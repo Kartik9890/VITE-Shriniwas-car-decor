@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import { galleryImages, topServices } from "./galleryData.jsx";
 
@@ -15,12 +16,9 @@ function Home() {
             Enhance your drive with premium car accessories and interior
             makeovers.
           </p>
-          <a
-            href="https://kartik9890.github.io/services"
-            className="cta-button"
-          >
+          <Link to="/services" className="cta-button">
             Explore Our Services
-          </a>
+          </Link>
         </div>
         <div className="hero-image">
           <img
@@ -67,18 +65,18 @@ function Home() {
           ))}
         </div>
 
-        <a href="/gallery" className="cta-button gallery-button">
+        <Link to="/gallery" className="cta-button gallery-button">
           View Full Gallery
-        </a>
+        </Link>
       </section>
 
       {/* Call to Action */}
       <section className="cta-section">
         <h2>Drive in Style Today</h2>
         <p>Contact us for custom car interiors, accessories, and more.</p>
-        <a href="/contact" className="cta-button">
+        <Link to="/contact" className="cta-button">
           Get in Touch
-        </a>
+        </Link>
       </section>
     </div>
   );
