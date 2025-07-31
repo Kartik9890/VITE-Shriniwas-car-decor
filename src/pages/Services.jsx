@@ -1,6 +1,39 @@
 // src/pages/Services.jsx
-import React from 'react';
-import '../pages/services.css'; // Ensure the path is correct
+import React from "react";
+import "./services.css"; // Ensure the path is correct
+
+const services = [
+  {
+    title: "Custom Seat Covers",
+    alt: "Seat Covers",
+    src: "https://media.istockphoto.com/id/2203752981/photo/the-detailing-master-cleans-the-car-interior-with-a-hot-steam-cleaner-close-up-dry-cleaning.jpg?s=1024x1024&w=is&k=20&c=4_niFVaI8Uv7CEgwHas-0tz_6Jmsqe2LHPTbK46k9pw=",
+  },
+  {
+    title: "Premium Sound Systems",
+    alt: "Sound Systems",
+    src: "https://media.istockphoto.com/id/157181237/photo/big-ones.jpg?s=1024x1024&w=is&k=20&c=pz6XobKX7dVjaCQkw-U4Lj9DVs3n_cmcUyW5bqkKmV8=",
+  },
+  {
+    title: "Floor Lamination",
+    alt: "Floor Lamination",
+    src: "https://media.istockphoto.com/id/1196526947/photo/cleaning-car-mats.jpg?s=1024x1024&w=is&k=20&c=RAVH1jsgyIo4P91PAkvVJLctwI-3Lok31aPf8XbzWBs=",
+  },
+  {
+    title: "Sunfilm & Tinting",
+    alt: "Sunfilm & Tinting",
+    src: "https://images.pexels.com/photos/10182912/pexels-photo-10182912.jpeg",
+  },
+  {
+    title: "Ambient Lighting",
+    alt: "Ambient Lighting",
+    src: "https://images.pexels.com/photos/18481945/pexels-photo-18481945.jpeg",
+  },
+  {
+    title: "Custom Body Kits",
+    alt: "Body Kits",
+    src: "https://images.pexels.com/photos/14863021/pexels-photo-14863021.jpeg",
+  },
+];
 
 const Services = () => {
   return (
@@ -11,30 +44,12 @@ const Services = () => {
       </div>
 
       <div className="services-grid">
-        <div className="service-card">
-          <img src="/assets/seats.jpg" alt="Seat Covers" />
-          <h3>Custom Seat Covers</h3>
-        </div>
-        <div className="service-card">
-          <img src="/assets/sound.jpg" alt="Sound Systems" />
-          <h3>Premium Sound Systems</h3>
-        </div>
-        <div className="service-card">
-          <img src="/assets/lamination.jpg" alt="Floor Lamination" />
-          <h3>Floor Lamination</h3>
-        </div>
-        <div className="service-card">
-          <img src="/assets/sunfilm.jpg" alt="Sunfilm & Tinting" />
-          <h3>Sunfilm & Tinting</h3>
-        </div>
-        <div className="service-card">
-          <img src="/assets/lighting.jpg" alt="Ambient Lighting" />
-          <h3>Ambient Lighting</h3>
-        </div>
-        <div className="service-card">
-          <img src="/assets/bodykit.jpg" alt="Body Kits" />
-          <h3>Custom Body Kits</h3>
-        </div>
+        {services.map((service, index) => (
+          <div key={index} className="service-card">
+            <img src={service.src} alt={service.alt} />
+            <h3>{service.title}</h3>
+          </div>
+        ))}
       </div>
     </section>
   );
