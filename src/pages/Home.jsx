@@ -11,7 +11,7 @@ function Home() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Welcome to Shriniwas Car Decor</h1>
+          <h1>Welcome to Shrinivas Car Decor</h1>
           <p>
             Enhance your drive with premium car accessories and interior
             makeovers.
