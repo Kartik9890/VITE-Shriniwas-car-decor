@@ -6,9 +6,9 @@ function About() {
     <div className="about-page">
       {/* Intro Section */}
       <section className="about-intro">
-        <h1>About Shriniwas Car Decor</h1>
+        <h1>About Shrinivas Car Decor</h1>
         <p>
-          Shriniwas Car Decor is your trusted destination for high-quality car
+          Shrinivas Car Decor is your trusted destination for high-quality car
           accessories, custom interior solutions, and expert installations.
           Based in [Your City], we’ve been serving car enthusiasts and daily
           drivers for over [X] years.

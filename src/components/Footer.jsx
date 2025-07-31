@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Company Info */}
         <div>
-          <h3>Shriniwas Car Decor</h3>
+          <h3>Shrinivas Car Decor</h3>
           <p>Your trusted partner in car styling and accessories.</p>
         </div>
 
@@ -70,7 +70,7 @@ const Footer = () => {
 
       {/* Bottom Strip */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Shriniwas Car Decor. All rights reserved.
+        © {new Date().getFullYear()} Shrinivas Car Decor. All rights reserved.
       </div>
     </footer>
   );

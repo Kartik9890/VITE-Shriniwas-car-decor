@@ -14,7 +14,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="logo-link">
-          <img src={logo} alt="Shriniwas Car Decor" className="logo" />
+          <img src={logo} alt="Shrinivas Car Decor" className="logo" />
         </Link>
 
         <button
