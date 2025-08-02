@@ -1,114 +1,145 @@
 /* Navbar Container */
 .navbar {
-    background-color: #111;
-    padding: 0.8rem 1.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: background 0.3s ease;
 }
 
+/* Flex Container */
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Logo Styling - Rounded with background */
+/* Logo Styling */
 .logo {
-    height: 60px;
-    width: auto;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 14px rgba(255, 202, 40, 0.3);
+  transition: transform 0.3s ease;
 }
 
 .logo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: rotate(5deg) scale(1.05);
 }
 
 /* Navigation Links */
 .nav-links {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
 }
 
 .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    position: relative;
-    transition: color 0.3s ease;
+  color: #fefefe;
+  font-size: 1rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-.nav-links li a::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: #ffca28;
-    transition: width 0.3s ease;
+.nav-links li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #ffc107, #ff9800);
+  transition: width 0.4s ease;
+}
+
+.nav-links li a:hover::before {
+  width: 100%;
 }
 
 .nav-links li a:hover {
-    color: #ffca28;
+  color: #ffca28;
 }
 
-.nav-links li a:hover::after {
-    width: 100%;
-}
-
-/* Hamburger Menu Icon */
+/* Hamburger Toggle Button */
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
 }
 
-.hamburger {
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.3s ease;
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.4s ease;
 }
 
-/* Mobile Responsive Styles */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Navigation */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
+  .menu-toggle {
+    display: flex;
+  }
 
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #111;
-        flex-direction: column;
-        width: 100%;
-        display: none;
-        gap: 1rem;
-        padding: 1rem;
-    }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 75%;
+    background: rgba(17, 17, 17, 0.97);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem;
+    transition: right 0.4s ease;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.6);
+  }
 
-    .nav-links.active {
-        display: flex;
-    }
+  .nav-links.active {
+    right: 0;
+  }
 
-    .nav-links li {
-        text-align: center;
-    }
+  .nav-links li a {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  .nav-links li a:hover {
+    color: #ffd54f;
+  }
 }

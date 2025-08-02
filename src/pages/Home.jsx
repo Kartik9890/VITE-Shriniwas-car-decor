@@ -33,6 +33,7 @@ function Home() {
             className="hero-video"
           />
         </div>
+        
       </section>
 
       {/* Intro Section */}

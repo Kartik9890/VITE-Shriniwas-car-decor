@@ -10,8 +10,8 @@ function About() {
         <p>
           Shrinivas Car Decor is your trusted destination for high-quality car
           accessories, custom interior solutions, and expert installations.
-          Based in [Your City], we’ve been serving car enthusiasts and daily
-          drivers for over [X] years.
+          Based in LATUR, we’ve been serving car enthusiasts and daily
+          drivers for over 5 years.
         </p>
       </section>
 

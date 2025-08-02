@@ -1,7 +1,8 @@
 .home-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0 1rem;
-  color: #333;
+  color: #fff;
+  background-color: #000; /* To enhance video blending */
 }
 
 /* Hero Section */
@@ -10,58 +11,70 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: #f4f4f4;
-  padding: 3rem 1rem;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  padding: 2.5rem 1rem;
   border-radius: 12px;
   margin-bottom: 2rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
   flex: 1;
-  padding: 1rem;
+  padding: 1.5rem;
+  z-index: 2;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
-  color: #111;
+  color: #f8f8f8;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  color: #e0e0e0;
 }
 
 .hero-image {
   flex: 1;
   text-align: center;
+  z-index: 2;
 }
 
 .hero-video {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #0e5e6f;
-  color: white;
+  background-color: #facc15;
+  color: #111;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   text-decoration: none;
   transition: background 0.3s ease;
+  font-weight: 600;
 }
 
 .cta-button:hover {
-  background-color: #0b3f48;
+  background-color: #f59e0b;
+  color: white;
 }
 
 /* Intro Section */
 .intro-section {
   text-align: center;
   margin: 3rem 0;
+  color: #eee;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .intro-section h2 {
@@ -78,6 +91,8 @@
 /* Services Highlight */
 .services-highlight {
   margin: 3rem 0;
+  color: #eee;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .services-highlight h2 {
@@ -99,6 +114,7 @@
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s;
+  color: #111;
 }
 
 .service-card:hover {
@@ -122,6 +138,8 @@
 .home-gallery-preview {
   text-align: center;
   margin: 3rem 0;
+  color: #eee;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .gallery-preview-grid {
@@ -153,6 +171,7 @@
   padding: 3rem 1rem;
   border-radius: 12px;
   margin: 4rem 0 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cta-section h2 {
